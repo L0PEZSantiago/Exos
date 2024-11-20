@@ -1,0 +1,454 @@
+/* ---------------------- DEFAULT CSS ---------------------- */
+
+* {
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #01c3c622;
+}
+
+
+/* NAVBAR */
+
+nav {
+    background-color: rgba(0, 0, 0, 0.850);
+}
+
+
+
+.btn_pink {
+    border: 2px solid rgb(215, 122, 170);
+    padding: 10px 30px;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+
+.btn_pink:hover {
+    background-color: rgb(215, 122, 170);
+    border: solid 2px rgb(215, 122, 170);
+    text-shadow: 0 0 65px rgb(215, 122, 170),
+        0 0 65px rgb(215, 122, 170);
+}
+
+
+/* SECTION ACCUEIL */
+
+#img_accueil img {
+    border-radius: 500px;
+    border: 4px solid rgb(215, 122, 170);
+}
+
+#img_about img,
+#img_carriere img {
+    border-radius: 50%;
+    border: 2px solid rgb(215, 122, 170);
+    box-shadow: inset 0 0 10px rgb(215, 122, 170), 0 0 10px rgb(215, 122, 170);
+}
+
+.titleDesc span {
+    color: rgb(215, 122, 170);
+}
+
+/* SECTION PRESENTATION */
+
+.about {
+    background-color: rgba(0, 0, 0, 0.850);
+    color: white;
+}
+
+.presentation h2 {
+    color: rgb(234, 134, 185);
+}
+
+.carriere {
+    background-color: rgba(255, 255, 255, 0.167);
+}
+
+/* SCROLLBAR */
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(215, 122, 170);
+}
+
+
+::-webkit-scrollbar-track {
+    background-color: black;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+/* BURGER */
+
+#toggle {
+    display: none;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: rgba(0, 0, 0, 0.850);
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    color: white;
+    font-weight: 800;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.copyright {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.socials_icons {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 10px;
+    color: white;
+}
+
+.socials_icons i {
+    border: solid 1px white;
+    border-radius: 20px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+
+/* -------------------- RESPONSIVE MOBILE -------------------- */
+
+@media screen and (max-width: 960px) {
+
+    /* NAVBAR */
+
+    nav {
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        height: 70px;
+        margin-bottom: 30px;
+    }
+
+
+    /* MENU BURGER MOBILE */
+
+    nav ul {
+        display: none;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 53%;
+        margin-right: 4%;
+        background: rgba(215, 122, 170, 0.950);
+        border-radius: 8px;
+        padding-inline-start: 0;
+        height: 120px;
+    }
+
+    .monBurger,
+    .divLogo {
+        width: 50%;
+    }
+
+    nav ul li {
+        width: 100%;
+        padding: 10px;
+        border-bottom: solid 1px black;
+        text-align: center;
+
+    }
+
+    nav ul li:last-child {
+        border-bottom: none;
+    }
+
+    nav ul li a {
+        color: white;
+    }
+
+
+    .monBurger {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* BURGER */
+
+    label {
+        width: 15px;
+        margin-right: 45px;
+        margin-top: 5px;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        font-size: 40px;
+        color: white;
+    }
+
+
+
+    #toggle:checked+ul {
+        display: flex;
+    }
+
+    nav .btn_pink {
+        display: none;
+    }
+
+    /* LOGO */
+
+    .logo {
+        letter-spacing: 2px;
+        color: white;
+
+    }
+
+    .logo i {
+        color: rgb(215, 122, 170);
+    }
+
+
+    /* SECTION ACCUEIL */
+
+    .accueil {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: 380px;
+    }
+
+    .img_box img {
+        max-width: 200px;
+    }
+
+    .titleDesc p {
+        text-align: center;
+    }
+
+    /* PRESENTATION */
+
+    .presentation {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .about,
+    .carriere {
+        min-height: 350px;
+        display: flex;
+        align-items: center;
+        padding: 15px;
+    }
+
+
+
+    .presentation h2 {
+        text-align: center;
+
+    }
+
+    .img_box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #img_carriere img {
+        max-width: 100px;
+    }
+
+    /* FOOTER */
+
+    footer p {
+        font-size: 10px;
+    }
+
+
+
+
+}
+
+
+
+/* -------------------- RESPONSIVE DESKTOP -------------------- */
+
+@media screen and (min-width: 961px) {
+
+    /* NAVBAR */
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 35px 200px;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+        min-width: 600px;
+        padding-inline-start: 0;
+    }
+
+    nav ul li a,
+    nav a {
+        font-size: 20px;
+        color: white;
+        transition: all 0.3s;
+    }
+
+
+    nav ul a:hover {
+        color: rgb(215, 122, 170);
+        border-bottom: 2px solid rgb(215, 122, 170);
+        transition: all 0s;
+    }
+
+    .logo {
+        letter-spacing: 5px;
+        transition: all 0.5s;
+    }
+
+    .logo span {
+        color: rgb(215, 122, 170);
+    }
+
+    .logo:hover {
+        color: rgb(215, 122, 170);
+        text-shadow: 0 0 25px rgb(215, 122, 170),
+            0 0 50px rgb(215, 122, 170);
+        transform: scale(1.1);
+    }
+
+    .burger {
+        display: none;
+    }
+
+    /* SECTION ACCUEIL */
+
+    .accueil {
+        display: flex;
+        align-items: center;
+        padding: 100px;
+    }
+
+
+    #img_accueil img {
+        max-width: 400px;
+    }
+
+    #img_about img {
+        max-width: 500px;
+    }
+
+    #img_carriere img {
+        max-width: 300px;
+    }
+
+    .titleDesc {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .titleDesc {
+        max-width: 50%;
+        max-height: 50%;
+    }
+
+    .titleDesc h1,
+    h2 {
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .titleDesc p {
+        font-size: 26px;
+    }
+
+    .img_box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 50%;
+        max-height: 500px;
+    }
+
+    /* PRESENTATION */
+
+
+    .about {
+        display: flex;
+        justify-content: center;
+    }
+
+    .carriere {
+        display: flex;
+        justify-content: center;
+        color: black;
+    }
+
+    .carriere p {
+        color: black;
+    }
+
+    .contenair {
+        max-width: 1500px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+        min-height: 600px;
+
+    }
+
+    label {
+        display: none;
+    }
+
+
+    /* FOOTER */
+    footer p {
+        font-size: 10px;
+    }
+
+    .socials_icons i:hover {
+        box-shadow: inset 0 0 10px rgb(215, 122, 170), 0 0 10px rgb(215, 122, 170);
+        transition: 0.2s ease;
+        transform: scale(1.2)translateY(-5px);
+    }
+
+
+}
