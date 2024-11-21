@@ -270,6 +270,10 @@ footer {
         padding: 15px;
     }
 
+    .carriere .contenair{
+        display: flex;
+        flex-direction: column-reverse;
+    }
 
 
     .presentation h2 {
